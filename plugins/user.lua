@@ -16,5 +16,11 @@ return {
     config = function() require("lazydocker").setup {} end,
     event = "VeryLazy", -- or any other event you might want to use.
   },
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    ft = { "markdown" },
+    build = function() vim.fn["mkdp#util#install"]() end,
+  },
 
 }
