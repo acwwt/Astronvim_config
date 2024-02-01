@@ -1,4 +1,9 @@
 return {
+  options = {
+    opt = {
+      clipboard = "",
+    }
+  },
   -- Configure AstroNvim updates
   updater = {
     remote = "origin", -- remote to use
